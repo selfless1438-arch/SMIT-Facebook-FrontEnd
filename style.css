@@ -1,0 +1,255 @@
+/* hoem page btn */
+.hoemPgaeLink {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    transform:  scale(1);
+    z-index: 1000000;
+    background-color: blueviolet;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.123);
+    padding: 10px 20px;
+    border-radius: 10px;
+    opacity: 1;
+    animation: 1s popIn ease;
+}
+
+@keyframes popIn {
+    0% {
+        top: -100%;
+    }
+
+    100% {
+        top: 30px;
+        opacity: 1;
+        transform:  scale(1);
+    }
+
+}
+
+
+/* / */
+
+
+.login-cont {
+    display: grid;
+    grid-template-columns: 1fr 640px;
+    align-items: center;
+    border-bottom: 2px solid rgb(218, 218, 218);
+}
+
+.login-cont .img-sec {
+    position: relative;
+    border-right: 2px solid rgb(218, 218, 218);
+}
+
+.login-cont .img-sec .fb-icon {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.login-cont .img-sec .fb-icon svg {
+    width: 70px;
+    height: 70px;
+}
+
+.login-cont .img-sec .bg-img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 700px;
+    min-height: 800px;
+    height: calc(100vh - 180px);
+    padding: 20px 0px 50px 50px;
+}
+
+.login-cont .img-sec .bg-img img {
+    width: 100%;
+}
+
+.login-cont .img-sec .bottom-text {
+    position: absolute;
+    width: 22vw;
+    bottom: 30px;
+    left: 30px;
+}
+
+.login-cont .img-sec .bottom-text h1 {
+    font-size: 42px;
+    font-weight: 600;
+    word-wrap: break-word;
+    color: #111112;
+}
+
+.login-cont .img-sec .bottom-text h1 span {
+    color: blueviolet;
+}
+
+/* form section */
+
+.form-section {
+    padding: 100px 40px;
+}
+
+.form-section>.form-title {
+    font-weight: 500;
+    color: #111112;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.form-section form .input-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.form-section form .input-cont label {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-60%);
+    color: rgb(129, 129, 129);
+}
+
+.form-section form .input-cont input {
+    border-radius: 10px;
+    border: 1px solid rgb(218, 218, 218);
+    padding: 30px 20px 10px 20px;
+    font-size: 16px;
+    outline: none;
+}
+
+.form-section form .input-cont:hover input {
+    border: 1px solid rgb(129, 129, 129);
+}
+
+.form-section form .btns {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 40px;
+    gap: 10px;
+}
+
+.form-section button {
+    border: 1px solid transparent;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 100px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.form-section form .btns button.loginBtn {
+    background-color: blueviolet;
+    color: #fff;
+}
+
+.form-section form .btns button.loginBtn:hover {
+    background-color: rgb(109, 33, 180);
+}
+
+.form-section form .btns button.forgotBtn {
+    font-weight: 500;
+    color: #111112;
+}
+
+.form-section .create-newBtn button:hover,
+.form-section form .btns button.forgotBtn:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.form-section .create-newBtn button {
+    width: 100%;
+    color: blueviolet;
+    font-weight: 500;
+    border: 1px solid blueviolet;
+}
+
+/* meta lgoog */
+
+.meta-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.meta-logo img {
+    height: 13px;
+    width: auto;
+}
+
+/* langgate */
+
+.dets-section {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    padding: 30px 20px;
+}
+
+.dets-section .cont {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dets-section .cont ul {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+    color: rgb(129, 129, 129);
+    flex-wrap: wrap;
+}
+
+.dets-section .cont ul.lang {
+    gap: 20px;
+}
+
+
+/* media screen for 1024 */
+
+@media screen and (max-width: 1024px) {
+    .login-cont {
+        grid-template-columns: 1fr;
+        border-bottom: 2px solid rgb(218, 218, 218);
+    }
+
+    .login-cont .img-sec :where(.bg-img, .bottom-text) {
+        display: none !important;
+    }
+
+    .login-cont .img-sec {
+        height: 140px;
+        border-bottom: 2px solid rgb(236, 236, 236);
+    }
+
+    .login-cont .img-sec .fb-icon {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .login-cont .form-section {
+        justify-self: center;
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dets-section {
+        display: none;
+    }
+}

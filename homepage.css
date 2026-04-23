@@ -1,0 +1,622 @@
+body {
+    background-color: rgb(226, 226, 226);
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    box-shadow: 0 0 10px grey;
+    background-color: #fff;
+}
+
+nav .nav-cont {
+    display: grid;
+    grid-template-columns: 300px 1fr 300px;
+    padding: 0 20px;
+    align-items: center;
+    height: 63px;
+}
+
+/* left side of nav bar */
+nav .nav-cont .left-side {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 5px;
+    align-items: center;
+}
+
+nav .nav-cont .left-side .logo {
+    height: 40px;
+}
+
+nav .nav-cont .left-side .logo img {
+    height: 100%;
+    width: auto;
+}
+
+nav .nav-cont .left-side .search-input {
+    position: relative;
+    overflow: hidden;
+    border-radius: 100px;
+    background-color: rgb(218, 218, 218);
+}
+
+nav .nav-cont .left-side .search-input label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+}
+
+nav .nav-cont .left-side .search-input input {
+    padding: 7px 7px 7px 33px;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+nav .nav-cont .nav-menu {
+    list-style: none;
+    padding: 0 20px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav-cont .nav-menu li {
+    position: relative;
+    max-width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+nav .nav-cont .nav-menu li svg {
+    width: 25px;
+    height: 25px;
+}
+
+nav .nav-cont .nav-menu li.active svg {
+    fill: blueviolet;
+}
+
+nav .nav-cont .nav-menu li.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    border-radius: 100px;
+    width: 100%;
+    background-color: blueviolet;
+    height: 4px;
+}
+
+nav .nav-cont .nav-menu li a {
+    text-decoration: none;
+}
+
+nav .nav-cont .nav-menu li .tool-tip {
+    position: absolute;
+    bottom: -30px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+nav .nav-cont .nav-menu li:hover .tool-tip {
+    opacity: 1;
+    bottom: -60px;
+}
+
+nav .nav-cont .right-side {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+nav .nav-cont .right-side .prof-dets {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav .nav-cont .right-side .prof-dets .prof-img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+    outline: 2px solid green;
+    outline-offset: 2px;
+}
+
+nav .nav-cont .right-side .prof-dets .prof-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+nav .nav-cont .right-side .prof-dets .prof-name {
+    font-weight: 500;
+}
+
+nav .nav-cont .right-side .item {
+    background-color: rgb(218, 218, 218);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+nav .nav-cont .right-side .item:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+nav .nav-cont .right-side .item i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-cont .right-side .item.add {
+    font-size: 30px;
+}
+
+/* mains ection */
+
+main {
+    height: calc(100vh - 70px);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 320px 1fr 320px;
+    gap: 20px;
+}
+
+main .aside-left::-webkit-scrollbar {
+    display: none;
+}
+
+main .aside-left {
+    overflow-x: hidden;
+    overflow: scroll;
+    height: 100%;
+    padding: 30px 10px;
+}
+
+main .aside-left .prof-dets {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+main .aside-left .prof-dets:hover {
+    background-color: rgb(218, 218, 218);
+}
+
+main .aside-left .prof-dets .prof-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    outline: 2px solid green;
+    outline-offset: 2px;
+    overflow: hidden;
+}
+
+main .aside-left .prof-dets .prof-img img {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+main .aside-left .prof-dets .prof-name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1b1b1b;
+}
+
+/* ul of left aside */
+
+.aside-left .more-menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.aside-left .more-menu li {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    gap: 10px;
+    color: #1b1b1b;
+    cursor: pointer;
+}
+
+.aside-left .more-menu li:hover {
+    background-color: rgb(218, 218, 218);
+}
+
+.aside-left .more-menu li .icon i {
+    font-size: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside-left .more-menu li .item-name {
+    font-weight: 500;
+}
+
+.aside-left>button {
+    width: 100%;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(179, 179, 179);
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.aside-left>button:hover {
+    background-color: rgb(150, 150, 150);
+}
+
+.aside-left>button i {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* main section container */
+.main-sec-cont::-webkit-scrollbar {
+    display: none;
+}
+
+.main-sec-cont {
+    padding: 30px 0;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+/* stories */
+
+.main-sec-cont .stories-cont::-webkit-scrollbar {
+    display: none;
+}
+
+.main-sec-cont .stories-cont {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    overflow: scroll;
+    overflow-y: hidden;
+    width: calc(100vw - 690px);
+}
+
+.main-sec-cont .stories-cont .story {
+    position: relative;
+    width: 120px;
+    height: 170px;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.main-sec-cont .stories-cont .story .bg-img {
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.main-sec-cont .stories-cont .story .bg-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.main-sec-cont .stories-cont .story .prof-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 5px;
+    color: #fff;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+.main-sec-cont .stories-cont .story .prof-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    outline: 2px solid #fff;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    overflow: hidden;
+}
+
+
+.main-sec-cont .stories-cont .story .prof-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-sec-cont .stories-cont .story:hover .bg-img {
+    scale: 1.05;
+}
+
+
+/* card of adding new posts */
+
+.add-new-card {
+    background-color: #fff;
+    margin: 30px 0;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.add-new-card .prof-cont {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.add-new-card .prof-cont .prof-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.add-new-card .prof-cont .prof-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.add-new-card .prof-cont input {
+    width: 100%;
+    border-radius: 1000px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(229, 229, 229);
+    font-size: 16px;
+}
+
+.add-new-card .others {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.add-new-card .others .item {
+    background-color: transparent;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.add-new-card .others .item i {
+    font-size: 24px;
+}
+
+.add-new-card .others .item:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+/* posts container */
+
+.posts-cont {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.posts-cont .post {
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.posts-cont .post .header {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.posts-cont .post .header .prof-dets {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.posts-cont .post .header .prof-dets .prof-img {
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.posts-cont .post .header .prof-dets .prof-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.posts-cont .post .header .prof-dets .o-dets {
+    line-height: 1.2;
+}
+
+.posts-cont .post .header .prof-dets .o-dets .name {
+    font-size: 16px;
+    color: #1b1b1b;
+    font-weight: 500;
+}
+
+.posts-cont .post .header>i {
+    cursor: pointer;
+}
+
+.posts-cont .post .header .prof-dets .o-dets .time {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(179, 179, 179);
+}
+
+
+.posts-cont .post .body p {
+    padding: 0 20px 5px 20px;
+}
+
+.posts-cont .post .body .post-img {
+    width: 100%;
+}
+
+.posts-cont .post .body .post-img img {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+/* right aside section */
+
+main .aside-right::-webkit-scrollbar {
+    display: none;
+}
+
+main .aside-right {
+    overflow-x: hidden;
+    width: 100%;
+    overflow: scroll;
+    height: 100%;
+    padding: 30px 10px;
+}
+
+main .aside-right .birthday {
+    padding-bottom: 15px;
+}
+
+main .aside-right .contacts {
+    padding: 15px 0;
+}
+
+main .aside-right .birthday .title,
+main .aside-right .contacts .title {
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+main .aside-right .birthday .dts-cont {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+main .aside-right .birthday .dts-cont i {
+    font-size: 28px;
+}
+
+main .aside-right .birthday .dts-cont .desc {
+    font-size: 14px;
+    color: rgba(29, 29, 29, 0.712);
+
+}
+
+main .aside-right .birthday .dts-cont .desc b {
+    font-weight: 500;
+    color: #1b1b1b;
+}
+
+/* contacts */
+
+.contacts .title i {
+    cursor: pointer;
+}
+
+.contacts .contact-menu {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.contacts .contact-menu li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contacts .contact-menu li:hover {
+    background-color: rgb(218, 218, 218);
+}
+
+.contacts .contact-menu li .img-cont {
+    position: relative;
+}
+
+.contacts .contact-menu li .img-cont .prof-img {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.contacts .contact-menu li.story .img-cont .prof-img {
+    outline: 2px solid blueviolet;
+    outline-offset: 2px;
+}
+
+.contacts .contact-menu li .img-cont .prof-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contacts .contact-menu li .img-cont .online-dot {
+    background-color: green;
+    border-radius: 50%;
+    outline: 1px solid #fff;
+    position: absolute;
+    bottom: 3px;
+    right: 3%;
+    width: 8px;
+    height: 8px;
+}

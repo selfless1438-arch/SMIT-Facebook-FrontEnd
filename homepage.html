@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/960px-2023_Facebook_icon.svg.png?_=20231011122028"
+        type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="root.css">
+    <link rel="stylesheet" href="homepage.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="nav-cont">
+            <div class="left-side">
+                <div class="logo">
+                    <img width="30px"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/960px-2023_Facebook_icon.svg.png?_=20231011122028"
+                        alt="">
+                </div>
+                <div class="search-input">
+                    <label for="search">
+                        <i class="bi bi-search"></i>
+                    </label>
+                    <input type="text" placeholder="Search Facebook" name="search" id="search">
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li class="active">
+                    <a href="">
+                        <svg width="256px" height="256px" viewBox="0 0 16 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M1 6V15H6V11C6 9.89543 6.89543 9 8 9C9.10457 9 10 9.89543 10 11V15H15V6L8 0L1 6Z"
+                                    fill="bluevoilet"></path>
+                            </g>
+                        </svg>
+                    </a>
+                    <span class="tool-tip">Home</span>
+                </li>
+                <li>
+                    <a href="">
+                        <svg fill="#000000" width="256px" height="256px" viewBox="0 0 36 36" version="1.1"
+                            preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <title>video-gallery-line</title>
+                                <path
+                                    d="M32.12,10H3.88A1.88,1.88,0,0,0,2,11.88V30.12A1.88,1.88,0,0,0,3.88,32H32.12A1.88,1.88,0,0,0,34,30.12V11.88A1.88,1.88,0,0,0,32.12,10ZM32,30H4V12H32Z"
+                                    class="clr-i-outline clr-i-outline-path-1"></path>
+                                <path d="M30.14,3h0a1,1,0,0,0-1-1h-22a1,1,0,0,0-1,1h0V4h24Z"
+                                    class="clr-i-outline clr-i-outline-path-2"></path>
+                                <path d="M32.12,7V7a1,1,0,0,0-1-1h-26a1,1,0,0,0-1,1h0V8h28Z"
+                                    class="clr-i-outline clr-i-outline-path-3"></path>
+                                <path
+                                    d="M12.82,26.79a1.74,1.74,0,0,0,.93.28,1.68,1.68,0,0,0,.69-.15l9.77-4.36a1.69,1.69,0,0,0,0-3.1L14.44,15.1a1.7,1.7,0,0,0-2.39,1.55v8.72A1.7,1.7,0,0,0,12.82,26.79Zm.63-10.14a.29.29,0,0,1,.14-.25.3.3,0,0,1,.16,0,.27.27,0,0,1,.12,0l9.77,4.35a.29.29,0,0,1,.18.28.28.28,0,0,1-.18.27l-9.77,4.36a.28.28,0,0,1-.28,0,.31.31,0,0,1-.14-.25Z"
+                                    class="clr-i-outline clr-i-outline-path-4"></path>
+                                <rect x="0" y="0" width="36" height="36" fill-opacity="0"></rect>
+                            </g>
+                        </svg>
+                    </a>
+                    <span class="tool-tip">Videos</span>
+                </li>
+                <li>
+                    <a href="">
+                        <svg width="256px" height="256px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" stroke="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path d="M22 22H2" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path>
+                                <path d="M20 22V11" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path>
+                                <path d="M4 22V11" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path>
+                                <path
+                                    d="M16.5278 2H7.47214C6.26932 2 5.66791 2 5.18461 2.2987C4.7013 2.5974 4.43234 3.13531 3.89443 4.21114L2.49081 7.75929C2.16652 8.57905 1.88279 9.54525 2.42867 10.2375C2.79489 10.7019 3.36257 11 3.99991 11C5.10448 11 5.99991 10.1046 5.99991 9C5.99991 10.1046 6.89534 11 7.99991 11C9.10448 11 9.99991 10.1046 9.99991 9C9.99991 10.1046 10.8953 11 11.9999 11C13.1045 11 13.9999 10.1046 13.9999 9C13.9999 10.1046 14.8953 11 15.9999 11C17.1045 11 17.9999 10.1046 17.9999 9C17.9999 10.1046 18.8953 11 19.9999 11C20.6373 11 21.205 10.7019 21.5712 10.2375C22.1171 9.54525 21.8334 8.57905 21.5091 7.75929L20.1055 4.21114C19.5676 3.13531 19.2986 2.5974 18.8153 2.2987C18.332 2 17.7306 2 16.5278 2Z"
+                                    stroke="#000000" stroke-width="1.5" stroke-linejoin="round"></path>
+                                <path
+                                    d="M9.5 21.5V18.5C9.5 17.5654 9.5 17.0981 9.70096 16.75C9.83261 16.522 10.022 16.3326 10.25 16.201C10.5981 16 11.0654 16 12 16C12.9346 16 13.4019 16 13.75 16.201C13.978 16.3326 14.1674 16.522 14.299 16.75C14.5 17.0981 14.5 17.5654 14.5 18.5V21.5"
+                                    stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path>
+                            </g>
+                        </svg>
+                    </a>
+                    <span class="tool-tip">Shop</span>
+                </li>
+                <li>
+                    <a href="">
+                        <svg width="256px" height="256px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <circle cx="9" cy="9" r="4" stroke="#000000" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2"></circle>
+                                <path d="M16 19C16 15.6863 12.866 13 9 13C5.13401 13 2 15.6863 2 19" stroke="#000000"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                <path
+                                    d="M15 13C17.2091 13 19 11.2091 19 9C19 6.79086 17.2091 5 15 5C13.8053 5 12.7329 5.52375 12 6.35418"
+                                    stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                </path>
+                                <path d="M22 19C22 15.6863 18.866 13 15 13C14.1928 13 12.897 12.7069 12 11.7655"
+                                    stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                </path>
+                            </g>
+                        </svg>
+                    </a>
+                    <span class="tool-tip">People</span>
+                </li>
+                <li>
+                    <a href="">
+                        <svg width="256px" height="256px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path d="M22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22H15C20 22 22 20 22 15Z"
+                                    stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                                <path d="M2.52002 7.11011H21.48" stroke="#000000" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M8.52002 2.11011V6.97011" stroke="#000000" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M15.48 2.11011V6.52011" stroke="#000000" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path
+                                    d="M9.75 14.4501V13.2501C9.75 11.7101 10.84 11.0801 12.17 11.8501L13.21 12.4501L14.25 13.0501C15.58 13.8201 15.58 15.0801 14.25 15.8501L13.21 16.4501L12.17 17.0501C10.84 17.8201 9.75 17.1901 9.75 15.6501V14.4501V14.4501Z"
+                                    stroke="#000000" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </g>
+                        </svg>
+                    </a>
+                    <span class="tool-tip">Reels</span>
+                </li>
+            </ul>
+            <div class="right-side">
+                <div class="prof-dets">
+                    <div class="prof-img">
+                        <img width="30px" src="https://avatars.githubusercontent.com/u/249313678?v=4" alt="">
+                    </div>
+                    <span class="prof-name">Danish</span>
+                </div>
+                <div class="add item"><i class="bi bi-plus"></i></div>
+                <div class="msg item"><i class="bi bi-messenger"></i></div>
+                <div class="noti item"><i class="bi bi-bell"></i></div>
+                <div class="more item"><i class="bi bi-caret-down-fill"></i></div>
+            </div>
+        </div>
+    </nav>
+    <!-- main section -->
+
+    <main>
+        <aside class="aside-left">
+            <div class="prof-dets">
+                <div class="prof-img">
+                    <img src="https://avatars.githubusercontent.com/u/249313678?v=4" alt="">
+                </div>
+                <span class="prof-name">Danish Ameer</span>
+            </div>
+            <ul class="more-menu">
+                <li>
+                    <div class="icon">
+                        <i class="bi bi-play-btn"></i>
+                    </div>
+                    <span class="item-name">Watch</span>
+                </li>
+                <li>
+                    <div class="icon">
+                        <i class="bi bi-calendar-heart"></i>
+                    </div>
+                    <span class="item-name">Events</span>
+                </li>
+                <li>
+                    <div class="icon">
+                        <i class="bi bi-people"></i>
+                    </div>
+                    <span class="item-name">Friends</span>
+                </li>
+                <li>
+                    <div class="icon">
+                        <i class="bi bi-clock-history"></i>
+                    </div>
+                    <span class="item-name">Memories</span>
+                </li>
+            </ul>
+            <button type="button">See More <i class="bi bi-chevron-down"></i></button>
+        </aside>
+        <section class="main-sec-cont">
+            <div class="stories-cont">
+                <div class="story ">
+                    <div class="bg-img">
+                        <img src="https://avatars.githubusercontent.com/u/249313678?v=4" alt="">
+                    </div>
+                    <div class="prof-img">
+                        <img src="https://png.pngtree.com/png-vector/20190507/ourmid/pngtree-vector-plus-icon-png-image_1024584.jpg"
+                            alt="">
+                    </div>
+                    <p class="prof-name">Add to story</p>
+                </div>
+                <div class="story ">
+                    <div class="bg-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyyowoSVfkyLYwXK9hu4rnxedc4bpTRmpwbg&s"
+                            alt="">
+                    </div>
+                    <div class="prof-img">
+                        <img src="https://media.easy-peasy.ai/4e600a82-8aac-4abb-95cd-f87cc9125a0f/18ea5802-d34e-4fbb-91e2-99baebb2eac9_medium.webp"
+                            alt="">
+                    </div>
+                    <p class="prof-name">Muhammad Ali</p>
+                </div>
+                <div class="story ">
+                    <div class="bg-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaJtcr0tvJyIJ3bU47oInK6UML7edSPDp4Lg&s"
+                            alt="">
+                    </div>
+                    <div class="prof-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJkeHjJyHrtDaFXxUzGBcpQUnS7YbdPcg_ew&s"
+                            alt="">
+                    </div>
+                    <p class="prof-name">Lucy</p>
+                </div>
+                <div class="story ">
+                    <div class="bg-img">
+                        <img src="https://media.istockphoto.com/id/1464853466/photo/place-of-work.jpg?s=612x612&w=0&k=20&c=Jn0W-oZdBjtm80gWhWzropUeWoODxYrxbWIkniAbhGc="
+                            alt="">
+                    </div>
+                    <div class="prof-img">
+                        <img src="https://photos.peopleimages.com/picture/202303/2681929-happy-black-man-mature-or-selfie-portrait-for-about-us-company-profile-picture-or-ceo-business-introduction.-smile-face-or-corporate-photography-of-manager-person-worker-or-employee-social-media-fit_400_400.jpg"
+                            alt="">
+                    </div>
+                    <p class="prof-name">David</p>
+                </div>
+                <div class="story ">
+                    <div class="bg-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh-D4uCWFrKYo9IDyHo9h3dfIRIH28ISHL2Q&s"
+                            alt="">
+                    </div>
+                    <div class="prof-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz1mHFSD9UAf9NKkI7_buBIIOdn6AY5rxqAA&s"
+                            alt="">
+                    </div>
+                    <p class="prof-name">Sad Boy</p>
+                </div>
+                <div class="story ">
+                    <div class="bg-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbkA5cUFYkaRHriVeLFilkXeFhyjv252KnuA&s"
+                            alt="">
+                    </div>
+                    <div class="prof-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-23dNQNIIkiwIhbvD9lIvOMR7Zm26zTYkqw&s"
+                            alt="">
+                    </div>
+                    <p class="prof-name">Kishan Chopra</p>
+                </div>
+                <div class="story ">
+                    <div class="bg-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG32E9VTuCu1IW-3ut6RhnjlSixevcps2TuQ&s"
+                            alt="">
+                    </div>
+                    <div class="prof-img">
+                        <img src="https://scontent.fmux3-1.fna.fbcdn.net/v/t1.6435-9/50709916_2341211132831811_113607541451128832_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=S-Qa67lyi58Q7kNvwFRO7CC&_nc_oc=AdptmBiIepZ-dM-hOTfy1mi5b1whLYm_A-idLz_Z0bTMRWYeZ6iFYXzIFU-i2W3F_Q8&_nc_zt=23&_nc_ht=scontent.fmux3-1.fna&_nc_gid=CJhm027yJUnaJ3rhffE8vA&oh=00_Af1sWTPNnsTs9FbyLO6IcBuC59jq0GmxvsFl0gyFw9_kSg&oe=6A11D015"
+                            alt="">
+                    </div>
+                    <p class="prof-name">Danish Meer</p>
+                </div>
+            </div>
+
+            <!-- add new post  -->
+
+
+            <div class="add-new-card">
+                <div class="prof-cont">
+                    <div class="prof-img">
+                        <img src="https://avatars.githubusercontent.com/u/249313678?v=4" alt="">
+                    </div>
+                    <div class="input-cont">
+                        <input type="text" name="addNew" id="addNew" placeholder="What's on your mind, Danish?">
+                    </div>
+                </div>
+                <hr>
+                <div class="others">
+                    <div class="item">
+                        <i class="bi bi-images"></i><span class="item-name">Photo/Video</span>
+                    </div>
+                    <div class="item">
+                        <i class="bi bi-tags"></i><span class="item-name">Tag Firend</span>
+                    </div>
+                    <div class="item">
+                        <i class="bi bi-emoji-smile "></i><span class="item-name">Feeling/Activity</span>
+                    </div>
+                </div>
+            </div>
+            <!-- posts container -->
+
+            <div class="posts-cont">
+                <div class="post">
+                    <div class="header">
+                        <div class="prof-dets">
+                            <div class="prof-img">
+                                <img src="https://avatars.githubusercontent.com/u/249313678?v=4" alt="">
+                            </div>
+                            <div class="o-dets">
+                                <p class="name">Muhammad Ali</p>
+                                <p class="time">5 hrs</p>
+                            </div>
+                        </div>
+                        <i class="bi bi-three-dots"></i>
+                    </div>
+                    <div class="body">
+                        <p class="post-desc">Alhamdullilah I visited the most beautiful place in the world. </p>
+                        <div class="post-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT77kRMbeD5YNk72VRYE_g3BElUilWmkKG0Ug&s"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ----------------------------------------- -->
+        </section>
+        <aside class="aside-right">
+            <div class="birthday">
+                <p class="title">Birthdays</p>
+                <div class="dts-cont">
+                    <i class="bi bi-gift"></i>
+                    <p class="desc">
+                        <b>Imran</b>, <b>Ali</b> and <b>4 others</b> have birthday today
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="contacts">
+                <p class="title"><span>Contacts</span> <i class="bi bi-three-dots"></i></p>
+                <ul class="contact-menu">
+                    <li class="story">
+                        <div class="img-cont">
+                            <div class="prof-img">
+                                <img src="https://media.easy-peasy.ai/4e600a82-8aac-4abb-95cd-f87cc9125a0f/18ea5802-d34e-4fbb-91e2-99baebb2eac9_medium.webp"
+                                    alt="">
+                            </div>
+                            <div class="online-dot"></div>
+                        </div>
+                        <div class="prof-name">Muhammad Ali</div>
+                    </li>
+                    <li class="story">
+                        <div class="img-cont">
+                            <div class="prof-img">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJkeHjJyHrtDaFXxUzGBcpQUnS7YbdPcg_ew&s"
+                                    alt="">
+                            </div>
+                            <div class="online-dot"></div>
+                        </div>
+                        <div class="prof-name">Lucy</div>
+                    </li>
+                    <li>
+                        <div class="img-cont">
+                            <div class="prof-img">
+                                <img src="https://png.pngtree.com/png-vector/20230831/ourmid/pngtree-man-avatar-image-for-profile-png-image_9197908.png"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="prof-name">Bilal Ahmad</div>
+                    </li>
+                    <li>
+                        <div class="img-cont">
+                            <div class="prof-img">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrO2BAJjCnm-GXIKCAHYJ-S8gvEP3we1zn-g&s"
+                                    alt="">
+                            </div>
+                            <div class="online-dot"></div>
+                        </div>
+                        <div class="prof-name">Preety Girl</div>
+                    </li>
+                    <li class="story">
+                        <div class="img-cont">
+                            <div class="prof-img">
+                                <img src="https://photos.peopleimages.com/picture/202303/2681929-happy-black-man-mature-or-selfie-portrait-for-about-us-company-profile-picture-or-ceo-business-introduction.-smile-face-or-corporate-photography-of-manager-person-worker-or-employee-social-media-fit_400_400.jpg"
+                                    alt="">
+                            </div>
+                            <div class="online-dot"></div>
+                        </div>
+                        <div class="prof-name">David</div>
+                    </li>
+                    <li class="story">
+                        <div class="img-cont">
+                            <div class="prof-img">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-23dNQNIIkiwIhbvD9lIvOMR7Zm26zTYkqw&s"
+                                    alt="">
+                            </div>
+                            <div class="online-dot"></div>
+                        </div>
+                        <div class="prof-name">Kishan Chopra</div>
+                    </li>
+                    <li class="story">
+                        <div class="img-cont">
+                            <div class="prof-img">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz1mHFSD9UAf9NKkI7_buBIIOdn6AY5rxqAA&s"
+                                    alt="">
+                            </div>
+                            <div class="online-dot"></div>
+                        </div>
+                        <div class="prof-name">Sad Boy</div>
+                    </li>
+                    <li>
+                        <div class="img-cont">
+                            <div class="prof-img">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmBTvX6oxm-0qkAXBAo6LDeZBYQ4RMPyHiAw&s"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="prof-name">Irfan Malik</div>
+                    </li>
+                    <li class="story">
+                        <div class="img-cont">
+                            <div class="prof-img">
+                                <img src="https://scontent.fmux3-1.fna.fbcdn.net/v/t1.6435-9/50709916_2341211132831811_113607541451128832_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=S-Qa67lyi58Q7kNvwFRO7CC&_nc_oc=AdptmBiIepZ-dM-hOTfy1mi5b1whLYm_A-idLz_Z0bTMRWYeZ6iFYXzIFU-i2W3F_Q8&_nc_zt=23&_nc_ht=scontent.fmux3-1.fna&_nc_gid=CJhm027yJUnaJ3rhffE8vA&oh=00_Af1sWTPNnsTs9FbyLO6IcBuC59jq0GmxvsFl0gyFw9_kSg&oe=6A11D015"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="prof-name">Danish Meer</div>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+/* form conteainer */
+.form-cont {
+    max-width: 600px;
+    padding: 30px;
+    margin: auto;
+}
+
+.form-cont>.back-btn {
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
+}
+
+.form-cont>.back-btn:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+.form-cont .title-cont .title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.form-cont .title-cont .desc {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+/* forom inputs containers */
+
+.layer {
+    margin-bottom: 20px;
+}
+
+.layer>.out-label {
+    font-weight: 500;
+    font-size: 17px;
+    cursor: auto;
+    margin-bottom: 5px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.layer>.out-label>i {
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.layer>.out-label>i:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+.layer>.inputs {
+    display: grid;
+    gap: 10px;
+}
+
+.layer>.inputs.name-inputs {
+    grid-template-columns: 1fr 1fr;
+}
+
+.layer>.inputs.birth-inputs {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.input-cont {
+    position: relative;
+}
+
+.input-cont>label {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-60%);
+    color: rgb(129, 129, 129);
+    font-size: 16px;
+}
+
+input,
+select {
+    border-radius: 15px;
+    border: 1px solid rgb(218, 218, 218);
+    padding: 30px 20px 10px 20px;
+    font-size: 16px;
+    outline: none;
+
+    color: rgb(129, 129, 129);
+    width: 100%;
+}
+
+select {
+    padding: 20px;
+}
+
+select:hover,
+input:hover {
+    border: 1px solid rgb(129, 129, 129);
+}
+
+/* terms */
+.terms {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.terms>a {
+    font-weight: 500;
+    color: rgb(118, 30, 201);
+    text-decoration: none;
+}
+
+.terms>a:hover {
+    text-decoration: underline;
+}
+
+/* buttons */
+
+
+.btns {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 40px;
+    gap: 10px;
+}
+
+.btns button {
+    border: 1px solid transparent;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 100px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btns button.submit {
+    background-color: blueviolet;
+    color: #fff;
+}
+
+.btns button.submit:hover {
+    background-color: rgb(109, 33, 180);
+}
+
+.btns button.alreadyAccount {
+    border: 1px solid rgb(129, 129, 129);
+    color: #111112;
+}
+
+.btns button.alreadyAccount:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+
+
+
+
+/* title */
+.meta-logo {
+    margin: 10px 0;
+}
+
+.meta-logo img {
+    height: 13px;
+    width: auto;
+}
+
+
+/* langgate */
+
+.dets-section {
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 30px 20px;
+}
+
+.dets-section .cont {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dets-section .cont ul {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+    color: rgb(129, 129, 129);
+    flex-wrap: wrap;
+}
+
+.dets-section .cont ul.lang {
+    gap: 20px;
+}

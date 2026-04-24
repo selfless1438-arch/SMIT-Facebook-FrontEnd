@@ -172,6 +172,18 @@ nav .nav-cont .right-side .item.add {
     font-size: 30px;
 }
 
+#togleRight {
+    display: none;
+}
+
+#togleRight i {
+    transition: all 0.3s ease;
+}
+
+#togleRight.active i {
+    rotate: 180deg;
+}
+
 /* mains ection */
 
 main {
@@ -298,6 +310,22 @@ main .aside-left .prof-dets .prof-name {
     overflow: scroll;
     overflow-x: hidden;
 }
+
+#togleLeft {
+    position: absolute;
+    left: 0;
+    top: 70px;
+    cursor: pointer;
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 0 50% 50% 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
 
 /* stories */
 
@@ -509,6 +537,63 @@ main .aside-left .prof-dets .prof-name {
     width: 100%;
     height: auto;
     display: flex;
+}
+
+.posts-cont .post .post-footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+}
+
+.posts-cont .post .post-footer .like-count {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    color: rgb(100, 100, 100);
+}
+
+.posts-cont .post .post-footer .like-count i {
+    background-color: blueviolet;
+    color: #fff;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.posts-cont .post .post-footer .foot {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.posts-cont .post .post-footer .foot button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: rgb(100, 100, 100);
+    font-weight: 500;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.posts-cont .post .post-footer .foot button:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.posts-cont .post .post-footer .foot button i {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* right aside section */

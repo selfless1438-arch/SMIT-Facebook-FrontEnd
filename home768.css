@@ -1,0 +1,72 @@
+@media screen and (max-width: 768px) {
+    body {
+        max-height: 100vh;
+        max-width: 100vw;
+        overflow: hidden !important;
+    }
+
+    .aside-left {
+        position: absolute;
+        background-color: #fff;
+        width: 300px !important;
+        left: -330px;
+        transition: all 0.3s ease;
+        top: 60px;
+        z-index: 10000;
+    }
+
+    .aside-left.active {
+        left: 0;
+    }
+
+    #togleLeft {
+        display: flex;
+        z-index: 100000;
+        transition: all 0.3s ease;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    #togleLeft.active {
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.0);
+        left: 300px;
+    }
+
+    #togleLeft.active i {
+        transition: all 0.3s ease;
+        rotate: 180deg;
+    }
+
+    /* nav input section */
+    .search-input .ovelay {
+        display: inline-block;
+        background-color: transparent;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+
+    .search-input.active {
+        position: fixed !important;
+        top: 14px;
+        left: 70px;
+        z-index: 10000000000;
+    }
+
+    .search-input.active .ovelay {
+        display: none;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        padding-left: 20px;
+    }
+
+    .main-sec-cont .stories-cont {
+        width: calc(100vw - 40px);
+    }
+
+}

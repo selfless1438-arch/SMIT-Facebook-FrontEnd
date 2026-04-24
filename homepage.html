@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="root.css">
     <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="home1250.css">
+    <link rel="stylesheet" href="home768.css">
 </head>
 
 <body>
@@ -23,11 +25,13 @@
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/960px-2023_Facebook_icon.svg.png?_=20231011122028"
                         alt="">
                 </div>
-                <div class="search-input">
+                <div class="search-input ">
                     <label for="search">
                         <i class="bi bi-search"></i>
                     </label>
                     <input type="text" placeholder="Search Facebook" name="search" id="search">
+                    <div class="ovelay" onclick="showSearch()">
+                    </div>
                 </div>
             </div>
             <ul class="nav-menu">
@@ -151,13 +155,16 @@
                 <div class="add item"><i class="bi bi-plus"></i></div>
                 <div class="msg item"><i class="bi bi-messenger"></i></div>
                 <div class="noti item"><i class="bi bi-bell"></i></div>
-                <div class="more item"><i class="bi bi-caret-down-fill"></i></div>
+                <div class="more item" id="togleRight"><i class="bi bi-caret-down-fill"></i></div>
             </div>
         </div>
     </nav>
     <!-- main section -->
 
     <main>
+        <div id="togleLeft">
+            <i class="bi bi-chevron-right"></i>
+        </div>
         <aside class="aside-left">
             <div class="prof-dets">
                 <div class="prof-img">
@@ -305,7 +312,8 @@
                     <div class="header">
                         <div class="prof-dets">
                             <div class="prof-img">
-                                <img src="https://avatars.githubusercontent.com/u/249313678?v=4" alt="">
+                                <img src="https://media.easy-peasy.ai/4e600a82-8aac-4abb-95cd-f87cc9125a0f/18ea5802-d34e-4fbb-91e2-99baebb2eac9_medium.webp"
+                                    alt="">
                             </div>
                             <div class="o-dets">
                                 <p class="name">Muhammad Ali</p>
@@ -317,15 +325,29 @@
                     <div class="body">
                         <p class="post-desc">Alhamdullilah I visited the most beautiful place in the world. </p>
                         <div class="post-img">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT77kRMbeD5YNk72VRYE_g3BElUilWmkKG0Ug&s"
-                                alt="">
+                            <img src="https://images.pexels.com/photos/26436664/pexels-photo-26436664.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="post-footer">
+                        <div class="like-count">
+                            <i class="bi bi-hand-thumbs-up"></i> 3
+                        </div>
+                        <div class="foot">
+                            <button type="button">
+                                <i class="bi bi-hand-thumbs-up"></i>
+                                Like
+                            </button>
+                            <button type="button">
+                                <i class="bi bi-chat-left"></i>
+                                Comment
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- ----------------------------------------- -->
         </section>
-        <aside class="aside-right">
+        <aside class="aside-right ">
             <div class="birthday">
                 <p class="title">Birthdays</p>
                 <div class="dts-cont">
@@ -430,6 +452,7 @@
             </div>
         </aside>
     </main>
+    <script src="home.js"></script>
 </body>
 
 </html>
